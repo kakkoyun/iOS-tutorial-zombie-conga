@@ -9,6 +9,65 @@
 #import "KAKMyScene.h"
 
 static const float ZOMBIE_MOVES_PER_SECOND = 120.0; // About 1/5 of scene.
+static const float ZOMBIE_ROTATE_RADIANS_PER_SECOND = 4 * M_PI;
+
+static inline CGPoint CGPointAdd(const CGPoint a,
+                                 const CGPoint b)
+{
+  return CGPointMake(a.x + b.x, a.y + b.y);
+}
+
+static inline CGPoint CGPointSubtract(const CGPoint a,
+                                      const CGPoint b)
+{
+  return CGPointMake(a.x - b.x, a.y - b.y);
+}
+
+static inline CGPoint CGPointMultiplyScalar(const CGPoint a,
+                                            const CGFloat c)
+{
+  return CGPointMake(a.x * c, a.y * c);
+}
+
+static inline CGFloat CGPointLength(const CGPoint a)
+{
+  return sqrtf(a.x * a.x + a.y * a.y);
+}
+
+static inline CGFloat CGPointDistance(const CGPoint a,
+                                      const CGPoint b)
+{
+  return CGPointLength(CGPointSubtract(a, b));
+}
+
+static inline CGPoint CGPointNormalize(const CGPoint a)
+{
+  CGFloat length = CGPointLength(a);
+  return CGPointMake(a.x / length, a.y / length);
+}
+
+static inline CGFloat CGPointToAngle(const CGPoint a)
+{
+  return atan2f(a.y, a.x);
+}
+
+static inline CGFloat ScalarSign(CGFloat a)
+{
+  return a <= 0 ? -1 : 1;
+}
+
+static inline CGFloat ScalarShortestAngleBetween(const CGFloat a,
+                                                 const CGFloat b)
+{
+  CGFloat difference = b - a;
+  CGFloat angle = fmodf(difference, M_PI * 2);
+  if (angle >= M_PI) {
+    angle -= M_PI * 2;
+  } else if (angle < -M_PI) {
+    angle += M_PI * 2;
+  }
+  return angle;
+}
 
 @implementation KAKMyScene
 {
@@ -16,6 +75,7 @@ static const float ZOMBIE_MOVES_PER_SECOND = 120.0; // About 1/5 of scene.
   NSTimeInterval _lastUpdateTime;
   NSTimeInterval _dt;
   CGPoint _velocity; // Represents 2D vector, direction(sign) and length (120, 0) ->
+  CGPoint _lastTouchLocation;
 }
 
 - (instancetype)initWithSize:(CGSize)size
@@ -52,13 +112,22 @@ static const float ZOMBIE_MOVES_PER_SECOND = 120.0; // About 1/5 of scene.
     _dt = 0;
   }
   _lastUpdateTime = currentTime;
+  
   NSLog(@"%0.2f time since last update time in milliseconds.", _dt * 1000);
   
-  [self boundsCheckPlayerForZombie];
-  [self rotateSprite:_zombie toFace:_velocity];
-  //  _zombie.position = CGPointMake(_zombie.position.x + 2, _zombie.position.y);
-  [self moveSprite:_zombie
-          velocity:_velocity];
+  CGFloat distance = CGPointDistance(_zombie.position, _lastTouchLocation);
+  if(distance <= (_dt * ZOMBIE_MOVES_PER_SECOND)) {
+    _zombie.position = _lastTouchLocation;
+    _velocity = CGPointZero;
+  } else {
+    [self boundsCheckPlayerForZombie];
+    [self rotateSprite:_zombie
+                toFace:_velocity
+   rotateRadiansPerSec:ZOMBIE_ROTATE_RADIANS_PER_SECOND];
+    //  _zombie.position = CGPointMake(_zombie.position.x + 2, _zombie.position.y);
+    [self moveSprite:_zombie
+            velocity:_velocity];
+  }
 }
 
 - (void) moveSprite:(SKSpriteNode *)sprite
@@ -67,26 +136,27 @@ static const float ZOMBIE_MOVES_PER_SECOND = 120.0; // About 1/5 of scene.
   CGPoint amountToMove = CGPointMake(velocity.x * _dt, velocity.y * _dt);
   NSLog(@"Amount to move : %@", NSStringFromCGPoint(amountToMove));
   
-  sprite.position = CGPointMake(sprite.position.x + amountToMove.x,
-                                sprite.position.y + amountToMove.y);
+  sprite.position = CGPointAdd(sprite.position, amountToMove);
 }
 
 - (void)rotateSprite:(SKSpriteNode *)sprite
               toFace:(CGPoint)direction
+ rotateRadiansPerSec:(CGFloat)rotateRadiansPerSec
 {
+  CGFloat shortest = ScalarShortestAngleBetween(sprite.zRotation, CGPointToAngle(direction));
+  CGFloat amtToRotate = rotateRadiansPerSec * _dt;
+  CGFloat angle = fabsf(shortest) < amtToRotate ? fabsf(shortest) : amtToRotate;
+  sprite.zRotation += ScalarSign(angle) * angle;
   // Note : Assumption that sprite actual faces pi degress.
-  sprite.zRotation = atan2f(direction.y, direction.x);
+  //  sprite.zRotation = CGPointToAngle(direction);
   
 }
 
 - (void)moveZombieTowardsLocation:(CGPoint)location
 {
-  CGPoint offset = CGPointMake(location.x - _zombie.position.x,
-                               location.y - _zombie.position.y);
-  CGFloat length = sqrtf(offset.x * offset.x + offset.y * offset.y);
-  CGPoint direction = CGPointMake(offset.x / length, offset.y / length); // Normalizing.
-  _velocity = CGPointMake(direction.x * ZOMBIE_MOVES_PER_SECOND,
-                          direction.y * ZOMBIE_MOVES_PER_SECOND);
+  CGPoint offset = CGPointSubtract(location, _zombie.position);
+  CGPoint direction = CGPointNormalize(offset); // Normalizing.
+  _velocity = CGPointMultiplyScalar(direction, ZOMBIE_MOVES_PER_SECOND);
 }
 
 - (void)boundsCheckPlayerForZombie
