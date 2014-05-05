@@ -17,13 +17,39 @@
 		C52FFF611916ACAD00F70283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF5F1916ACAD00F70283 /* Main.storyboard */; };
 		C52FFF641916ACAD00F70283 /* KAKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52FFF631916ACAD00F70283 /* KAKViewController.m */; };
 		C52FFF671916ACAD00F70283 /* KAKMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C52FFF661916ACAD00F70283 /* KAKMyScene.m */; };
-		C52FFF691916ACAD00F70283 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF681916ACAD00F70283 /* Spaceship.png */; };
 		C52FFF6B1916ACAD00F70283 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF6A1916ACAD00F70283 /* Images.xcassets */; };
 		C52FFF721916ACAD00F70283 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52FFF711916ACAD00F70283 /* XCTest.framework */; };
 		C52FFF731916ACAD00F70283 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52FFF4B1916ACAD00F70283 /* Foundation.framework */; };
 		C52FFF741916ACAD00F70283 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52FFF4F1916ACAD00F70283 /* UIKit.framework */; };
 		C52FFF7C1916ACAD00F70283 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF7A1916ACAD00F70283 /* InfoPlist.strings */; };
 		C52FFF7E1916ACAD00F70283 /* Zombie_CongaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52FFF7D1916ACAD00F70283 /* Zombie_CongaTests.m */; };
+		C52FFFA61916B34400F70283 /* background (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF891916B34400F70283 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */; };
+		C52FFFA71916B34400F70283 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF8A1916B34400F70283 /* background.png */; };
+		C52FFFA81916B34400F70283 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF8B1916B34400F70283 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */; };
+		C52FFFA91916B34400F70283 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF8C1916B34400F70283 /* background@2x.png */; };
+		C52FFFAA1916B34400F70283 /* MainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF8D1916B34400F70283 /* MainMenu.png */; };
+		C52FFFAB1916B34400F70283 /* MainMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF8E1916B34400F70283 /* MainMenu@2x.png */; };
+		C52FFFAC1916B34400F70283 /* YouLose.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF8F1916B34400F70283 /* YouLose.png */; };
+		C52FFFAD1916B34400F70283 /* YouLose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF901916B34400F70283 /* YouLose@2x.png */; };
+		C52FFFAE1916B34400F70283 /* YouWin.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF911916B34400F70283 /* YouWin.png */; };
+		C52FFFAF1916B34400F70283 /* YouWin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF921916B34400F70283 /* YouWin@2x.png */; };
+		C52FFFB01916B34400F70283 /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF941916B34400F70283 /* bgMusic.mp3 */; };
+		C52FFFB11916B34400F70283 /* hitCat.wav in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF951916B34400F70283 /* hitCat.wav */; };
+		C52FFFB21916B34400F70283 /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF961916B34400F70283 /* hitCatLady.wav */; };
+		C52FFFB31916B34400F70283 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF971916B34400F70283 /* lose.wav */; };
+		C52FFFB41916B34400F70283 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF981916B34400F70283 /* win.wav */; };
+		C52FFFB51916B34400F70283 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF9A1916B34400F70283 /* cat.png */; };
+		C52FFFB61916B34400F70283 /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF9B1916B34400F70283 /* cat@2x.png */; };
+		C52FFFB71916B34400F70283 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF9C1916B34400F70283 /* enemy.png */; };
+		C52FFFB81916B34400F70283 /* enemy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF9D1916B34400F70283 /* enemy@2x.png */; };
+		C52FFFB91916B34400F70283 /* zombie1.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF9E1916B34400F70283 /* zombie1.png */; };
+		C52FFFBA1916B34400F70283 /* zombie1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFF9F1916B34400F70283 /* zombie1@2x.png */; };
+		C52FFFBB1916B34400F70283 /* zombie2.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFFA01916B34400F70283 /* zombie2.png */; };
+		C52FFFBC1916B34400F70283 /* zombie2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFFA11916B34400F70283 /* zombie2@2x.png */; };
+		C52FFFBD1916B34400F70283 /* zombie3.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFFA21916B34400F70283 /* zombie3.png */; };
+		C52FFFBE1916B34400F70283 /* zombie3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFFA31916B34400F70283 /* zombie3@2x.png */; };
+		C52FFFBF1916B34400F70283 /* zombie4.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFFA41916B34400F70283 /* zombie4.png */; };
+		C52FFFC01916B34400F70283 /* zombie4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52FFFA51916B34400F70283 /* zombie4@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +79,39 @@
 		C52FFF631916ACAD00F70283 /* KAKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAKViewController.m; sourceTree = "<group>"; };
 		C52FFF651916ACAD00F70283 /* KAKMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAKMyScene.h; sourceTree = "<group>"; };
 		C52FFF661916ACAD00F70283 /* KAKMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAKMyScene.m; sourceTree = "<group>"; };
-		C52FFF681916ACAD00F70283 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		C52FFF6A1916ACAD00F70283 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C52FFF701916ACAD00F70283 /* Zombie CongaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zombie CongaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52FFF711916ACAD00F70283 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C52FFF791916ACAD00F70283 /* Zombie CongaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Zombie CongaTests-Info.plist"; sourceTree = "<group>"; };
 		C52FFF7B1916ACAD00F70283 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C52FFF7D1916ACAD00F70283 /* Zombie_CongaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zombie_CongaTests.m; sourceTree = "<group>"; };
+		C52FFF891916B34400F70283 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background (Charlie Fulton's conflicted copy 2013-10-22).png"; sourceTree = "<group>"; };
+		C52FFF8A1916B34400F70283 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		C52FFF8B1916B34400F70283 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x (Charlie Fulton's conflicted copy 2013-10-22).png"; sourceTree = "<group>"; };
+		C52FFF8C1916B34400F70283 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		C52FFF8D1916B34400F70283 /* MainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenu.png; sourceTree = "<group>"; };
+		C52FFF8E1916B34400F70283 /* MainMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainMenu@2x.png"; sourceTree = "<group>"; };
+		C52FFF8F1916B34400F70283 /* YouLose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLose.png; sourceTree = "<group>"; };
+		C52FFF901916B34400F70283 /* YouLose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YouLose@2x.png"; sourceTree = "<group>"; };
+		C52FFF911916B34400F70283 /* YouWin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouWin.png; sourceTree = "<group>"; };
+		C52FFF921916B34400F70283 /* YouWin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YouWin@2x.png"; sourceTree = "<group>"; };
+		C52FFF941916B34400F70283 /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
+		C52FFF951916B34400F70283 /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
+		C52FFF961916B34400F70283 /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
+		C52FFF971916B34400F70283 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		C52FFF981916B34400F70283 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		C52FFF9A1916B34400F70283 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		C52FFF9B1916B34400F70283 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat@2x.png"; sourceTree = "<group>"; };
+		C52FFF9C1916B34400F70283 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+		C52FFF9D1916B34400F70283 /* enemy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enemy@2x.png"; sourceTree = "<group>"; };
+		C52FFF9E1916B34400F70283 /* zombie1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie1.png; sourceTree = "<group>"; };
+		C52FFF9F1916B34400F70283 /* zombie1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie1@2x.png"; sourceTree = "<group>"; };
+		C52FFFA01916B34400F70283 /* zombie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie2.png; sourceTree = "<group>"; };
+		C52FFFA11916B34400F70283 /* zombie2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie2@2x.png"; sourceTree = "<group>"; };
+		C52FFFA21916B34400F70283 /* zombie3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie3.png; sourceTree = "<group>"; };
+		C52FFFA31916B34400F70283 /* zombie3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie3@2x.png"; sourceTree = "<group>"; };
+		C52FFFA41916B34400F70283 /* zombie4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie4.png; sourceTree = "<group>"; };
+		C52FFFA51916B34400F70283 /* zombie4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie4@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +173,10 @@
 		C52FFF531916ACAD00F70283 /* Zombie Conga */ = {
 			isa = PBXGroup;
 			children = (
-				C52FFF5C1916ACAD00F70283 /* KAKAppDelegate.h */,
-				C52FFF5D1916ACAD00F70283 /* KAKAppDelegate.m */,
+				C52FFF871916B34400F70283 /* Art */,
 				C52FFF5F1916ACAD00F70283 /* Main.storyboard */,
-				C52FFF621916ACAD00F70283 /* KAKViewController.h */,
-				C52FFF631916ACAD00F70283 /* KAKViewController.m */,
 				C52FFF651916ACAD00F70283 /* KAKMyScene.h */,
 				C52FFF661916ACAD00F70283 /* KAKMyScene.m */,
-				C52FFF681916ACAD00F70283 /* Spaceship.png */,
 				C52FFF6A1916ACAD00F70283 /* Images.xcassets */,
 				C52FFF541916ACAD00F70283 /* Supporting Files */,
 			);
@@ -138,6 +186,10 @@
 		C52FFF541916ACAD00F70283 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C52FFF621916ACAD00F70283 /* KAKViewController.h */,
+				C52FFF631916ACAD00F70283 /* KAKViewController.m */,
+				C52FFF5C1916ACAD00F70283 /* KAKAppDelegate.h */,
+				C52FFF5D1916ACAD00F70283 /* KAKAppDelegate.m */,
 				C52FFF551916ACAD00F70283 /* Zombie Conga-Info.plist */,
 				C52FFF561916ACAD00F70283 /* InfoPlist.strings */,
 				C52FFF591916ACAD00F70283 /* main.m */,
@@ -162,6 +214,64 @@
 				C52FFF7A1916ACAD00F70283 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C52FFF871916B34400F70283 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				C52FFF881916B34400F70283 /* Backgrounds */,
+				C52FFF931916B34400F70283 /* Sounds */,
+				C52FFF991916B34400F70283 /* sprites */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		C52FFF881916B34400F70283 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				C52FFF891916B34400F70283 /* background (Charlie Fulton's conflicted copy 2013-10-22).png */,
+				C52FFF8A1916B34400F70283 /* background.png */,
+				C52FFF8B1916B34400F70283 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png */,
+				C52FFF8C1916B34400F70283 /* background@2x.png */,
+				C52FFF8D1916B34400F70283 /* MainMenu.png */,
+				C52FFF8E1916B34400F70283 /* MainMenu@2x.png */,
+				C52FFF8F1916B34400F70283 /* YouLose.png */,
+				C52FFF901916B34400F70283 /* YouLose@2x.png */,
+				C52FFF911916B34400F70283 /* YouWin.png */,
+				C52FFF921916B34400F70283 /* YouWin@2x.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		C52FFF931916B34400F70283 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C52FFF941916B34400F70283 /* bgMusic.mp3 */,
+				C52FFF951916B34400F70283 /* hitCat.wav */,
+				C52FFF961916B34400F70283 /* hitCatLady.wav */,
+				C52FFF971916B34400F70283 /* lose.wav */,
+				C52FFF981916B34400F70283 /* win.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C52FFF991916B34400F70283 /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				C52FFF9A1916B34400F70283 /* cat.png */,
+				C52FFF9B1916B34400F70283 /* cat@2x.png */,
+				C52FFF9C1916B34400F70283 /* enemy.png */,
+				C52FFF9D1916B34400F70283 /* enemy@2x.png */,
+				C52FFF9E1916B34400F70283 /* zombie1.png */,
+				C52FFF9F1916B34400F70283 /* zombie1@2x.png */,
+				C52FFFA01916B34400F70283 /* zombie2.png */,
+				C52FFFA11916B34400F70283 /* zombie2@2x.png */,
+				C52FFFA21916B34400F70283 /* zombie3.png */,
+				C52FFFA31916B34400F70283 /* zombie3@2x.png */,
+				C52FFFA41916B34400F70283 /* zombie4.png */,
+				C52FFFA51916B34400F70283 /* zombie4@2x.png */,
+			);
+			path = sprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +351,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52FFFB31916B34400F70283 /* lose.wav in Resources */,
+				C52FFFAE1916B34400F70283 /* YouWin.png in Resources */,
+				C52FFFB71916B34400F70283 /* enemy.png in Resources */,
+				C52FFFBB1916B34400F70283 /* zombie2.png in Resources */,
+				C52FFFBD1916B34400F70283 /* zombie3.png in Resources */,
+				C52FFFB21916B34400F70283 /* hitCatLady.wav in Resources */,
+				C52FFFB61916B34400F70283 /* cat@2x.png in Resources */,
+				C52FFFB81916B34400F70283 /* enemy@2x.png in Resources */,
+				C52FFFAD1916B34400F70283 /* YouLose@2x.png in Resources */,
+				C52FFFC01916B34400F70283 /* zombie4@2x.png in Resources */,
 				C52FFF581916ACAD00F70283 /* InfoPlist.strings in Resources */,
+				C52FFFAA1916B34400F70283 /* MainMenu.png in Resources */,
+				C52FFFA71916B34400F70283 /* background.png in Resources */,
+				C52FFFA81916B34400F70283 /* background@2x (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */,
+				C52FFFB11916B34400F70283 /* hitCat.wav in Resources */,
+				C52FFFAF1916B34400F70283 /* YouWin@2x.png in Resources */,
+				C52FFFB91916B34400F70283 /* zombie1.png in Resources */,
+				C52FFFAC1916B34400F70283 /* YouLose.png in Resources */,
+				C52FFFB51916B34400F70283 /* cat.png in Resources */,
+				C52FFFA91916B34400F70283 /* background@2x.png in Resources */,
+				C52FFFB01916B34400F70283 /* bgMusic.mp3 in Resources */,
+				C52FFFBE1916B34400F70283 /* zombie3@2x.png in Resources */,
+				C52FFFBC1916B34400F70283 /* zombie2@2x.png in Resources */,
+				C52FFFBA1916B34400F70283 /* zombie1@2x.png in Resources */,
+				C52FFFBF1916B34400F70283 /* zombie4.png in Resources */,
+				C52FFFAB1916B34400F70283 /* MainMenu@2x.png in Resources */,
+				C52FFFA61916B34400F70283 /* background (Charlie Fulton's conflicted copy 2013-10-22).png in Resources */,
+				C52FFFB41916B34400F70283 /* win.wav in Resources */,
 				C52FFF6B1916ACAD00F70283 /* Images.xcassets in Resources */,
-				C52FFF691916ACAD00F70283 /* Spaceship.png in Resources */,
 				C52FFF611916ACAD00F70283 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
