@@ -17,10 +17,14 @@
   
   // Configure the view.
   SKView * skView = (SKView *)self.view;
-  
+
   if(!skView.scene){
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
+    
+    // SKScene : SKNode
+    // SKNode.userInteractionEnabled = NO; by default
+    // SKScene.userInteractionEnabled = YES; by default
     
     // Create and configure the scene.
     SKScene * scene = [KAKMyScene sceneWithSize:skView.bounds.size];
