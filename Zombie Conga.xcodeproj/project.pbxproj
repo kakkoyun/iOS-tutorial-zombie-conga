@@ -173,10 +173,10 @@
 		C52FFF531916ACAD00F70283 /* Zombie Conga */ = {
 			isa = PBXGroup;
 			children = (
+				C55071B4191B3407001D6BFB /* ViewControllers */,
 				C52FFF871916B34400F70283 /* Art */,
 				C52FFF5F1916ACAD00F70283 /* Main.storyboard */,
-				C52FFF651916ACAD00F70283 /* KAKMyScene.h */,
-				C52FFF661916ACAD00F70283 /* KAKMyScene.m */,
+				C55071B5191B341F001D6BFB /* Scenes */,
 				C52FFF6A1916ACAD00F70283 /* Images.xcassets */,
 				C52FFF541916ACAD00F70283 /* Supporting Files */,
 			);
@@ -186,8 +186,6 @@
 		C52FFF541916ACAD00F70283 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C52FFF621916ACAD00F70283 /* KAKViewController.h */,
-				C52FFF631916ACAD00F70283 /* KAKViewController.m */,
 				C52FFF5C1916ACAD00F70283 /* KAKAppDelegate.h */,
 				C52FFF5D1916ACAD00F70283 /* KAKAppDelegate.m */,
 				C52FFF551916ACAD00F70283 /* Zombie Conga-Info.plist */,
@@ -272,6 +270,24 @@
 				C52FFFA51916B34400F70283 /* zombie4@2x.png */,
 			);
 			path = sprites;
+			sourceTree = "<group>";
+		};
+		C55071B4191B3407001D6BFB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C52FFF621916ACAD00F70283 /* KAKViewController.h */,
+				C52FFF631916ACAD00F70283 /* KAKViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C55071B5191B341F001D6BFB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C52FFF651916ACAD00F70283 /* KAKMyScene.h */,
+				C52FFF661916ACAD00F70283 /* KAKMyScene.m */,
+			);
+			name = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -609,6 +625,7 @@
 				C52FFF831916ACAD00F70283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C52FFF841916ACAD00F70283 /* Build configuration list for PBXNativeTarget "Zombie CongaTests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +634,7 @@
 				C52FFF861916ACAD00F70283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
