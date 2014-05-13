@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6FA48F69-7367-48D5-886E-59F67F7BA0E4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Zombie Conga</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>70FB6704-ADA3-43BE-95D0-8D2FC6436416</key>
+		<string>ssh://github.com/kakkoyun/iOS-tutotial-zombie-conga.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Zombie Conga.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>70FB6704-ADA3-43BE-95D0-8D2FC6436416</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/kakkoyun/iOS-tutotial-zombie-conga.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>70FB6704-ADA3-43BE-95D0-8D2FC6436416</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>70FB6704-ADA3-43BE-95D0-8D2FC6436416</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Zombie Conga</string>
+		</dict>
+	</array>
+</dict>
+</plist>
